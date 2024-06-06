@@ -16066,7 +16066,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   jumpSpeed: 18
+  RisingGravityScale: 5
+  fallingGravityScale: 8
   resetPos: {x: -3, y: 1, z: 0}
+  KPressedTimer: 0
+  jumpPressThreshold: 1
 --- !u!61 &1525991151
 BoxCollider2D:
   m_ObjectHideFlags: 0
