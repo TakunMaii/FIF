@@ -13398,7 +13398,7 @@ MonoBehaviour:
   m_Priority: 100
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 1525991149}
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 10
@@ -16061,12 +16061,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27d0c8d9aee05e44a280d166fed2868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 7
   Ground:
     serializedVersion: 2
     m_Bits: 64
   jumpSpeed: 18
+  RisingGravityScale: 5
+  fallingGravityScale: 8
+  maxFallingSpeed: {x: 0, y: -20}
   resetPos: {x: -3, y: 1, z: 0}
+  KPressedTimer: 0
+  jumpPressThreshold: 0.3
+  accelerationDurationTime: 0.2
+  decelerationDurationTime: 0.15
+  currentSpeed: 0
 --- !u!61 &1525991151
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16137,7 +16145,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &1525991153
 BoxCollider2D:
