@@ -12,7 +12,7 @@ Every time you bring back your acorn, the map will change someway, gradually fro
 ### Build it yourself
 No built release provided yet. Download Unity editor and Build it yourself.
 
-### Play in on web
+### Play it on web
 
 [Click Here.](https://umaiit.itch.io/fall-into-fall)
 
